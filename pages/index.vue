@@ -3,7 +3,7 @@
     <div>
       <logo/>
       <h1 class="title">
-        static
+        static 2
       </h1>
       <h2 class="subtitle">
         Nuxt.js project
@@ -13,6 +13,13 @@
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
     </div>
+  <script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/sw.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
+</script>
   </section>
 </template>
 
